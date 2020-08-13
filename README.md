@@ -11,7 +11,7 @@ A preprint version of this work exists at the [arXiv](https://arxiv.org/abs/1909
 ## Required packages
 
 The Julia packages `SpecialFunctions`, `Distributed` and `LinearAlgebra` are required,
-so make sure you have these insatalled in your Julia environment.
+so make sure you have these installed in your Julia environment.
 
 ## Using the code
 
