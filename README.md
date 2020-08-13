@@ -24,7 +24,7 @@ files (which resides in the `src` directory).
 In this file the user can configure its parallel environment (i.e. how much processors
 he has in the machine running Julia). The line `n_cores` define how many cores are 
 added to the main processor. For example, in a machine with 4 cores `n_cores=3` is the
-maximum allowable that makes sense. I recommend to use as many cores as you can.
+allowable maximum value that makes sense. I recommend to use as many cores as you can.
 
 Once loaded the main file, by typing
 ```
@@ -32,24 +32,27 @@ include("jul_main.jl")
 ```
 you are ready to execute the two-spheres example provided (backscattering from two
 penetrable spheres) that corresponds to Fig. 3 (see details in the arXiv or the
-JSV paper).
+JSV paper). This is accomplished by typing
 ```
 include("Script_Shells_bem_K.jl")
 ```
-During the executing of the script some informative text will be displayed in the
-screen. Lines as
+During the script execution  some informative text will be displayed at the screen. 
+Lines as
 ```
 Calculating the frequency : 15206.520916753354 ::: 9 of 10
 ```
 allow to see the actual stage of the calculation and how much work remains to be
 done (i.e. frequencies to be calculated).
 
-When done (with 3 i5-3570@3.4 GHz cores took one hour to calculate ten points) the
+When done (with 3 i5-3570@3.4 GHz cores took me one hour to calculate ten points) the
 resulting TS versus frequency is saved in the `out` directory.
-This result can be seen in the figure below this lines, compared against the benchmark 
+This result can be seen in the figure below this lines, compared against the benchmark
 solution.
 
 ![image info](fig_test_spheres.png)
+
+The parameters from the executin can be altered in the script file. The `meshes`
+directory contains the STL format meshes corresponding to the scatterers.
 
 ## General considerations
 
