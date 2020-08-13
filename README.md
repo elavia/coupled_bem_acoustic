@@ -36,20 +36,26 @@ JSV paper).
 include("Script_Shells_bem_K.jl")
 ```
 During the executing of the script some informative text will be displayed in the
-screen. The lines :
+screen. Lines as
 ```
 Calculating the frequency : 15206.520916753354 ::: 9 of 10
 ```
 allow to see the actual stage of the calculation and how much work remains to be
-done (frequencies to be calculated).
+done (i.e. frequencies to be calculated).
+
+When done (with 3 i5-3570@3.4 GHz cores took one hour to calculate ten points) the
+resulting TS versus frequency is saved in the `out` directory.
+This result can be seen in the figure below this lines against the benchmark solution.
+
+
 
 
 ## General considerations
 
-* This code is not end-user friendly software.
+* This code is not friendly end-user software.
 * This code is a research code aimed to implement acoustic scattering.
-* I am not a programmer, am a physicist that solves physical problems aided with
-the computer. There is a gap in between.
+* I am not a programmer, am a physicist that solves stimulating physical problems 
+aided with the computer. There is a gap in between.
 * Concerning scattering, a mesh is a representation of the scatterer's object 
 appropriate only in a range of frequencies. Make sure that a proper relation
 between the acoustic wavelength and the segment longitudes in the mesh is
