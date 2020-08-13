@@ -4,8 +4,8 @@ This code provides an implementation for the acoustic scattering problem of two
 penetrable scatterers under a BEM philosophy, using planar triangular meshes.
 Successfully tested under Julia 1.1.
 Details from the theoretical formulation are in the work:
-https://www.sciencedirect.com/science/article/abs/pii/S0022460X20304405?via%3Dihub
-A preprint version of this work exists at https://arxiv.org/abs/1909.11781
+[Boundary element method to analyze acoustic scattering from a coupled swimbladder-fish body configuration](https://www.sciencedirect.com/science/article/abs/pii/S0022460X20304405?via%3Dihub)
+A preprint version of this work exists at [ArXiv preprint](https://arxiv.org/abs/1909.11781)
 
 ## Required packages
 
