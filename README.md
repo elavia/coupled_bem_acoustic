@@ -68,6 +68,23 @@ are the sizes (numbers of triangles) of the meshes. Bearing in mind this constra
 because by default each element is a 128 bits complex (64 bits for each, real and 
 imaginary parts). Avoid a matrix size which surpasses your physical memory.
 
+## Citing the code?
 
-Thank you for try the code.
+If you have used the code and find useful for you research work, please cite the article
+> Boundary element method to analyze acoustic scattering from a coupled swimbladder-fish body configuration.
+A bibtext entry follows:
+```
+@article{gonzalez2020boundary,
+  title={Boundary element method to analyze acoustic scattering from a coupled swimbladder-fish body configuration},
+  author={Gonzalez, Juan D and Lavia, Edmundo F and Blanc, Silvia and Maas, Martin and Madirolas, Adri{\'a}n},
+  journal={Journal of Sound and Vibration},
+  pages={115609},
+  year={2020},
+  publisher={Elsevier}
+}
+```
+
+## Final words
+
+Thank you for try the code. Other example scripts will be uploaded soon!
 Any suggestions and comments will be welcomed at sivasadartantasvueltasnosirve@gmail.com.
