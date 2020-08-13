@@ -1,16 +1,5 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #	
-#	Script para scattering de meshes penetrables con triángulos planos (BEM)
-#	(en función del número de onda K)
-#	
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#   Este script es para el paper BEM de fisheries. Dos esferas concéntricas de radios
-#   'r1' y 'r2' con ciertos parámetros.
-#	v. 23-4-2019
-
-
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#	
 #	Script Two concentric spheres. Backscattering versus frequency
 #	
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,7 +51,7 @@
 			selv1, vertex1, normales1, selv2, vertex2, normales2, cores ) ;
 
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	# Se salva en disco el TS calculado
+	# Saving to disk the TS
 	writedlm( "out/shells_bem_spheres_k.dat", [ FrecArray  TS.( finf ) ] ) ;
 
 	@everywhere GC.gc() ;
