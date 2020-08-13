@@ -57,8 +57,8 @@ fulfilled (some details in the paper).
 
 ## Memory considerations
 
-* This BEM formulation ensambles a matrix of size $2(N+L) \times 2(N+L)$, where
-N and L are the sizes (numbers of triangles) of the meshes. Bearing in mind this
+* This BEM formulation ensambles a matrix of size `2(N+L) x 2(N+L)`, where
+`N` and `L` are the sizes (numbers of triangles) of the meshes. Bearing in mind this
 constraint because by default each element is a 128 bits complex (64 bits for each,
 real and imaginary parts). Avoid a matrix size which surpasses your physical memory.
 
