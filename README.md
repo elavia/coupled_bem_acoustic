@@ -47,8 +47,7 @@ When done (with 3 i5-3570@3.4 GHz cores took one hour to calculate ten points) t
 resulting TS versus frequency is saved in the `out` directory.
 This result can be seen in the figure below this lines against the benchmark solution.
 
-
-
+![image info](./fig_test_spheres.pdf)
 
 ## General considerations
 
@@ -63,10 +62,10 @@ fulfilled (some details in the paper).
 
 ## Memory considerations
 
-* This BEM formulation ensambles a matrix of size `2(N+L) x 2(N+L)`, where
-`N` and `L` are the sizes (numbers of triangles) of the meshes. Bearing in mind this
-constraint because by default each element is a 128 bits complex (64 bits for each,
-real and imaginary parts). Avoid a matrix size which surpasses your physical memory.
+* This BEM formulation ensambles a matrix of size `2(N+L) x 2(N+L)`, where `N` and `L`
+are the sizes (numbers of triangles) of the meshes. Bearing in mind this constraint 
+because by default each element is a 128 bits complex (64 bits for each, real and 
+imaginary parts). Avoid a matrix size which surpasses your physical memory.
 
 
 Thank you for try the code.
