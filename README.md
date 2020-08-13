@@ -62,7 +62,7 @@ directory contains the STL format meshes corresponding to the scatterers.
 aided with the computer. There is a gap in between.
 * Concerning scattering, a mesh is a representation of the scatterer's object 
 appropriate only in a range of frequencies. Make sure that a proper relation
-between the acoustic wavelength and the segment longitudes in the mesh is
+between the acoustic wavelength and the triangle's longitude in the mesh is
 fulfilled (some details in the paper).
 
 ## Memory considerations
@@ -76,6 +76,7 @@ imaginary parts). Avoid a matrix size which surpasses your physical memory.
 
 If you have used the code and find useful for you research work, please cite the article
 > Boundary element method to analyze acoustic scattering from a coupled swimbladder-fish body configuration.
+
 A bibtext entry follows:
 ```
 @article{gonzalez2020boundary,
