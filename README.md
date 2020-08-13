@@ -49,6 +49,7 @@ This result can be seen in the figure below this lines, compared against the ben
 solution.
 
 ![image info](fig_test_spheres.png)
+![image info](fig_test_spheres.png)
 
 ## General considerations
 
