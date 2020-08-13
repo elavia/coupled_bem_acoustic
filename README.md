@@ -48,6 +48,7 @@ resulting TS versus frequency is saved in the `out` directory.
 This result can be seen in the figure below this lines against the benchmark solution.
 
 ![image info](out/fig_test_spheres.pdf)
+![image info](./out/fig_test_spheres.pdf)
 
 ## General considerations
 
