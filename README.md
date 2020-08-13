@@ -5,7 +5,7 @@ penetrable scatterers under a BEM philosophy, using planar triangular meshes.
 Successfully tested under Julia 1.1.
 Details from the theoretical formulation are in the work:
 [Boundary element method to analyze acoustic scattering from a coupled swimbladder-fish body configuration](https://www.sciencedirect.com/science/article/abs/pii/S0022460X20304405?via%3Dihub)
-A preprint version of this work exists at [ArXiv preprint](https://arxiv.org/abs/1909.11781)
+A preprint version of this work exists at [arXiv preprint](https://arxiv.org/abs/1909.11781)
 
 ## Required packages
 
@@ -30,18 +30,37 @@ Once loaded the main file, by typing
 include("jul_main.jl")
 ```
 you are ready to execute the two-spheres example provided (backscattering from two
-penetrable spheres).
+penetrable spheres) that corresponds to Fig. 3 (see details in the arXiv or the
+JSV paper).
 ```
 include("Script_Shells_bem_K.jl")
 ```
+During the executing of the script some informative text will be displayed in the
+screen. The lines :
+```
+Calculating the frequency : 15206.520916753354 ::: 9 of 10
+```
+allow to see the actual stage of the calculation and how much work remains to be
+done (frequencies to be calculated).
 
 
+## General considerations
 
-
+* This code is not end-user friendly software.
+* This code is a research code aimed to implement acoustic scattering.
+* I am not a programmer, am a physicist that solves physical problems aided with
+the computer. There is a gap in between.
+* Concerning scattering, a mesh is a representation of the scatterer's object 
+appropriate only in a range of frequencies. Make sure that a proper relation
+between the acoustic wavelength and the segment longitudes in the mesh is
+fulfilled (some details in the paper).
 
 ## Memory considerations
 
-
+* This BEM formulation ensambles a matrix of size $2(N+L) \times 2(N+L)$, where
+N and L are the sizes (numbers of triangles) of the meshes. Bearing in mind this
+constraint because by default each element is a 128 bits complex (64 bits for each,
+real and imaginary parts). Avoid a matrix size which surpasses your physical memory.
 
 
 Thank you for try the code.
