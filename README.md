@@ -47,7 +47,7 @@ When done (with 3 i5-3570@3.4 GHz cores took one hour to calculate ten points) t
 resulting TS versus frequency is saved in the `out` directory.
 This result can be seen in the figure below this lines against the benchmark solution.
 
-![image info](./fig_test_spheres.pdf)
+![image info](fig_test_spheres.pdf)
 
 ## General considerations
 
