@@ -1,6 +1,6 @@
 # Coupled BEM acoustic
 
-This code provides an implementation for the acoustic scattering problem of two
+This code provides an implementation to address the acoustic scattering problem of two
 penetrable scatterers under a BEM philosophy, using planar triangular meshes.
 Tested under Julia 1.1.
 Details from the theoretical formulation are in the work:
