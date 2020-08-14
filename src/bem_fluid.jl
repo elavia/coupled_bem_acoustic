@@ -50,7 +50,7 @@
 		# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		# Creación de la estructura WKSPC 
 		WKSPC = Array{ TypeNumber }( undef, 2*NSE, 2*NSE ) ;
-		println( "Filling WKSPC matrix with distrubuted process ... " ) ;
+		println( "Filling WKSPC matrix with distributed process ... " ) ;
 		# Se divide la mitad de columnas a llenar (NSE) entre el nro de columnas para cada procesador y se
 		# construye un vector que tiene rangos de columnas a calcular ([ nro de ColPerProc] salvo quizás
 		# el último).
