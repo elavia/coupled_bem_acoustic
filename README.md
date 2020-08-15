@@ -19,7 +19,7 @@ The code is organized in one main file
 ```
 jul_main.jl
 ```
-which must be loaded previously to any script run. This file loads all the necessary
+which must be loaded previously to any script-run. This file loads all the necessary
 files (which reside in the `src` directory).
 In this file the user can configure its parallel environment (i.e. how many processors
 he has in the machine running Julia). The line `n_cores` defines how many cores are 
