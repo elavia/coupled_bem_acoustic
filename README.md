@@ -10,7 +10,7 @@ A preprint version of this work exists at the [arXiv](https://arxiv.org/abs/1909
 
 ## Required packages
 
-The Julia packages `SpecialFunctions`, `Distributed` and `LinearAlgebra` are required,
+The Julia packages `SpecialFunctions`, `DelimitedFiles`, `Distributed` and `LinearAlgebra` are required,
 so make sure you have them installed in your Julia environment.
 
 ## Using the code
