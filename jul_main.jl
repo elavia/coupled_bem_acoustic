@@ -14,6 +14,7 @@
 	# Julia packages
 	
 	using Distributed
+	using DelimitedFiles
 	
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	# Local packages (only in the master node)
