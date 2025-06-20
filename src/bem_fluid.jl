@@ -41,7 +41,7 @@
 		# Este paso hay que hacerlo aquí dentro puesto que cuando evalúo eval(:VAR) dentro
 		# de la función en realidad VAR se busca primero en el host remoto y no se toma 
 		# del argumento de entrada VAR.
-		for i in procesadores # Se copian al procesador 'i' las estructuras necesarias
+		for i in cores # Se copian al procesador 'i' las estructuras necesarias
 			SendToProc( i, selv = selv, vertex = vertex, normales = normales, pext = pext ) ;
 			SendToProc( i, K0 = K0, K1 = K1, rho0 = rho0, rho1 = rho1 ) ;
 		end
@@ -124,7 +124,7 @@
 		# Este paso hay que hacerlo aquí dentro puesto que cuando evalúo eval(:VAR) dentro
 		# de la función en realidad VAR se busca primero en el host remoto y no se toma 
 		# del argumento de entrada VAR.
-		for i in procesadores # Se copian al procesador 'i' las estructuras necesarias
+		for i in cores # Se copian al procesador 'i' las estructuras necesarias
 			SendToProc( i, selv = selv, vertex = vertex, normales = normales, pext = pext ) ;
 			SendToProc( i, K0 = K0, K1 = K1, rho0 = rho0, rho1 = rho1 ) ;
 		end
@@ -214,7 +214,7 @@
 		# Este paso hay que hacerlo aquí dentro puesto que cuando evalúo eval(:VAR) dentro
 		# de la función en realidad VAR se busca primero en el host remoto y no se toma 
 		# del argumento de entrada VAR.
-		for i in procesadores # Se copian al procesador 'i' las estructuras necesarias
+		for i in cores # Se copian al procesador 'i' las estructuras necesarias
 			SendToProc( i, selv = selv, vertex = vertex, normales = normales, pext = pext ) ;
 			SendToProc( i, K0 = K0, K1 = K1, rho0 = rho0, rho1 = rho1 ) ;
 		end
@@ -289,7 +289,7 @@
 		NPI = size( pint )[1] ; # Número de puntos internos de campo 
 		NSE = size( selv )[1] ; # Número de elementos de superficie
 		A0 = 1.0 ; # Amplitud de la onda incidente
-#		# Configuración de la ejecución en paralelo en el cluster
+		# Configuración de la ejecución en paralelo en el cluster
 		np = size( cores )[1] ; # Número de procesadores (sin el proceso local "1")
 		ColPerProc = 64 ; # Número de columnas que llena cada procesador cada vez
 		# Creación de la estructura WKSPC (Array local -- se llena por proceso distribuido--)
